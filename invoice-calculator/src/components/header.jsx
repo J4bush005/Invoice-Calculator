@@ -1,9 +1,6 @@
 import React from "react";
 
-function header() {
-    const handlePrint = () => {
-        window.print();
-      }
+function header({ handlePrint }) {
   return (
     <div>
       {" "}
