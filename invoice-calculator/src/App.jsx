@@ -2,27 +2,30 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const handlePrint = () => {
+    window.print();
+  }
   return (
     <>
-      <main>
+      <main className='p-5 lg:max-w-xl lg:mx-auto'>
         {/* Header */}
-        <header>
+        <header className="flex flex-col items-center justify-center mb-5">
           <div>
             <h2>Invoice</h2>
           </div>
 
           <div>
-            <ul>
-              <li>Print</li>
-              <li>Download</li>
-              <li>Send</li>
+            <ul className='flex items-center justify-between flex-wrap'>
+              <li><button className='btn btn-print' onClick={handlePrint}>Print</button></li>
+              <li><button className='btn btn-download'>Download</button></li>
+              <li><button className='btn btn-send'>Send</button></li>
             </ul>
           </div>
         </header>
         {/* End of Header */}
 
         {/* My Info */}
-        <section>
+        <section className='flex flex-col items-end justify-end'>
           <h2>Johnathon Forbush</h2>
           <p>Address</p>
         </section>
