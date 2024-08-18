@@ -1,6 +1,6 @@
 import React from "react";
 
-function mainDetails() {
+function mainDetails({name, address}) {
   return (
     <div>
       {" "}
